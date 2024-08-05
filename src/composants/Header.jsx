@@ -1,21 +1,17 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../style/Card.css";
+
 
 const Header = () => {
-    return (
-        <div className='header'>
-            <nav>
-                <ul>
-                    <NavLink to="/">
-                        <li>accueil</li>
-                    </NavLink>
-                    <NavLink to="/">
-                        <li>favoris</li>
-                    </NavLink>
-                </ul>
-            </nav>
-        </div>
-    );
+  return (
+    
+      <nav className="header">
+        <Link to="/">Movielist</Link>
+        <Link to="/Favoris">Favoris</Link>
+      </nav>
+   
+  );
 };
 
 export default Header;
